@@ -1,0 +1,96 @@
+<!DOCTYPE html<html>
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		body{
+			background-image: linear-gradient(red, yellow, blue);
+}
+
+		
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<title>new project</title>
+</head>
+<body>
+<div class="container">
+<h1 class="text-success text-center">Due Amount  List Form</h1>
+ <form action="" id="product" class="was-validated my-5">
+  <div class="form-group w-50 mx-auto">
+    New project:
+    <input type="text" class="form-control" placeholder="New project" required>
+    <div class="valid-feedback">valid</div>
+     <div class="invalid-feedback">please fill the name</div>
+  </div>
+  <div class="form-group w-50 mx-auto">
+    Hyderabad:
+    <input type="text" class="form-control" placeholder="Hyderabad"  required>
+     <div class="valid-feedback">valid</div>
+     <div class="invalid-feedback">please fill the location</div>
+  </div>
+    <div class="row"  id="member">
+  <div class="col-lg-3 w-50 mx-auto">
+    <input type="text" class="form-control" id="New project" placeholder="amout" name="amout">
+    </div>
+    <div class="col-lg-3 w-50 mx-auto">
+      <input type="date" class="form-control" placeholder="date" name="date">
+    </div>
+    <button><i class="fa fa-plus btn btn-primary" onclick="add_more_filds()"></i></button>
+    </div>  
+  <button type="submit" class="btn btn-primary align-item-center" onclick="myFunction()">submit</button>
+</form>
+</div>
+
+
+	<script type="text/javascript">
+		var counter=1;
+         function add_more_filds(){
+         	counter+=1;
+         	html=' <div class="row py-2"  id="member'+counter+'">\
+  <div class="col-lg-3 w-50 mx-auto">\
+      <input type="text" class="form-control" id="New project" placeholder="amout" name="amout'+counter+'">\
+    </div>\
+    <div class="col-lg-3 w-50 mx-auto">\
+      <input type="date" class="form-control" placeholder="date" name="pswd'+counter+'">\
+    </div>\
+    </div>'
+             var forth =  document.getElementById('product');
+          forth.innerHTML+=html
+   
+
+}
+
+</script>
+
+
+
+<script type="text/javascript">
+  
+
+
+</script>
+<script type="text/javascript">
+         import { request } from 'http';
+ 
+const req = request(
+  {
+    host: 'jsonplaceholder.typicode.com',
+    path: '/todos/1',
+    method: 'POST',
+  },
+  response => {
+    console.log(response.statusCode); // 200
+  }
+);
+ 
+req.end();
+</script>
+
+	</script>
+
+	</body>
+
+
+</html>
